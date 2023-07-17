@@ -35,6 +35,8 @@ const emit = defineEmits<{
 <style lang="scss" scoped>
 .modal {
     &__content {
+        overflow-y: auto;
+
         position: fixed;
         top: 50%;
         left: 50%;
@@ -42,6 +44,7 @@ const emit = defineEmits<{
 
         min-width: 20%;
         min-height: 20%;
+        max-height: 100%;
 
         padding: 2rem;
 

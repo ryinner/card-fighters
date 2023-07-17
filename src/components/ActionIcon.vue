@@ -36,7 +36,6 @@ const availableActionsCount = computed(() => props.action.actions.filter(action 
 
     &__image {
         width: 100%;
-        height: 100%;
         object-fit: fill;
     }
 
