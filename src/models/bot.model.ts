@@ -61,7 +61,7 @@ export default class {
         });
 
         if (map.length === 0) {
-            return undefined;''
+            return undefined;
         }
 
         return map.sort((a, b) => b.priority - a.priority)[0].fighter;
