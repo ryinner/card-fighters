@@ -69,6 +69,10 @@ const cardClickHandler = (cardFighter: CardsFighters, isPlayerCard: boolean) => 
             fightStore.endTour();
             fightStore.startNewTour();
         }
+        if (!selectedCardFighter.value?.isAlive) {
+            selectedCardFighter.value = undefined;
+            selectedAction.value = undefined;
+        }
         return;
     }
     if ((selectedCardFighter.value === cardFighter) && isPlayerCard) {
