@@ -38,17 +38,19 @@ export default class {
     }
 
     private getTarget (action: actionModel): void {
-        let target!: CardsFighters;
+        let target!: CardsFighters | undefined;
         if (action instanceof healModel) {
             target = this.getHealTarget();
         }
         if (action instanceof attackModel) {
             target = this.getAttackTarget();
         }
-        action.tryAction(target);
+        if (target) {
+            action.tryAction(target);
+        }
     }
 
-    private getHealTarget(): CardsFighters {
+    private getHealTarget(): CardsFighters | undefined {
         const map: { fighter: CardsFighters; priority: number }[] = [];
         this.botCards.forEach(fighter => {
             if (fighter.isAlive && fighter.maxHealPoints !== fighter.hp) {
@@ -57,6 +59,10 @@ export default class {
                 map.push({ fighter, priority});
             }
         });
+
+        if (map.length === 0) {
+            return undefined;''
+        }
 
         return map.sort((a, b) => b.priority - a.priority)[0].fighter;
     }
