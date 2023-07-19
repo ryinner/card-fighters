@@ -42,7 +42,8 @@ onUnmounted(cleanMemory);
                 'card-fighter--player': isPlayer,
                 'card-fighter--enemy': !isPlayer,
                 'card-fighter--selected': isSelected,
-                'card-fighter--damaged': stateManager === CardsFightersEvents.takeDamage
+                'card-fighter--damaged': stateManager === CardsFightersEvents.takeDamage,
+                'card-fighter--healed': stateManager === CardsFightersEvents.heal
             }"
         >
             <div class="card-fighter__stats">
@@ -179,6 +180,10 @@ onUnmounted(cleanMemory);
     &--damaged {
         animation: damaged 1s ease-out;
     }
+
+    &--healed {
+        animation: healed 1s ease-out;
+    }
 }
 
 @keyframes damaged {
@@ -192,6 +197,16 @@ onUnmounted(cleanMemory);
 
     100% {
         transform: translateX(0);
+    }
+}
+
+@keyframes healed {
+    0% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 </style>
