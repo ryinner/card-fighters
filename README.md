@@ -5,7 +5,7 @@ It's a try of writing a simple vue js game.
 
 Basic things what should be in project:
 
-- [:x:] FullTypescript;
+- [:heavy_check_mark:] FullTypescript;
 - [:x:] FullTestCoverage.
 
 This is exactly what I want to code:
@@ -14,8 +14,8 @@ This is exactly what I want to code:
 - [:heavy_check_mark:] CardsUI \[Card, Action, Graveyard\];
 - [:heavy_check_mark:] CardsTypes: \[DD, Healer\];
 - [:heavy_check_mark:] CardsActions: \[Spawn, Heal, TakeDamage, Attack, Die\];
-- [:x:] SimpleEnemyAi;
-- [:x:] Fights.
+- [:heavy_check_mark:] SimpleEnemyAi;
+- [:heavy_check_mark:] Fights.
 
 This is what I would like to try to code:
 

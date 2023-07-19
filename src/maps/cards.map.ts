@@ -13,8 +13,8 @@ const cardsMap: Card[] = [
         description: 'the best warrior in the kingdom',
         image: knightImage,
         coast: 2,
-        healthPoints: 5,
-        actions: [{name: ActionsTypes.attack, quantity: 2, power: 2}]
+        healthPoints: 15,
+        actions: [{name: ActionsTypes.attack, quantity: 3, power: 3}]
     },
     {
         id: 2,
@@ -23,8 +23,8 @@ const cardsMap: Card[] = [
         description: 'the best healer in the kingdom',
         image: doctorImage,
         coast: 3,
-        healthPoints: 2,
-        actions: [{name: ActionsTypes.attack, quantity: 1}, {name: ActionsTypes.heal, quantity: 1, power: 2}]
+        healthPoints: 6,
+        actions: [{name: ActionsTypes.attack, quantity: 2}, {name: ActionsTypes.heal, quantity: 2, power: 2}]
     },
     {
         id: 3,
@@ -33,8 +33,8 @@ const cardsMap: Card[] = [
         description: 'don\'t touch his flowers...',
         image: druidImage,
         coast: 4,
-        healthPoints: 7,
-        actions: [{name: ActionsTypes.attack, quantity: 1, power: 5}]
+        healthPoints: 10,
+        actions: [{name: ActionsTypes.attack, quantity: 1, power: 6}]
     },
     {
         id: 4,
@@ -43,8 +43,8 @@ const cardsMap: Card[] = [
         description: 'the best archer even after death',
         image: archerImage,
         coast: 4,
-        healthPoints: 2,
-        actions: [{name: ActionsTypes.attack, quantity: 3, power: 1}]
+        healthPoints: 6,
+        actions: [{name: ActionsTypes.attack, quantity: 6, power: 1}]
     }
 ];
 
