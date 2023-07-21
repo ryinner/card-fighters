@@ -46,7 +46,7 @@ export default class {
             target = this.getAttackTarget();
         }
         if (target) {
-            action.tryAction(target);
+            action.activate(target);
         }
     }
 
